@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Untitled Document</title>
+    <!-- Bootstrap -->
+	<link href="../css/bootstrap-4.2.1.css" rel="stylesheet">
+	<style>
+        #bg-color { background-color: brown !important; }
+      </style>
+  </head>
+  <body>
+  	<!-- body code goes here -->
+      
+      <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+            <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"> <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#">Link</a> </li>
+                <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a> </div>
+                </li>
+                <li class="nav-item"> <a class="nav-link disabled" href="#">Disabled</a> </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+      
+      <div class="content container">
+          <h1 class="main-title mt-5 text-center text-success">Main Title</h1>
+          <!-- Weekday Section -->
+      <section id="days" class="py-5">
+          
+            <h2 class="text-center">Days of the workweek</h2>
+              <div class="row">
+                  
+                  <div class="col-md-6 col-lg-4">
+                      <div class="card text-center">
+                        <div class="card-body">
+                            <h3 class="card-title">Monday</h3>
+                            <p class="card-text">The first day of the workweek and after the weekend.</p>
+                            <button class="btn btn-info">More ...</button>
+                            </div><!-- card-body -->
+                      </div><!-- card -->
+                  </div><!-- col -->
+      
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card text-center">
+                      <div class="card-body">
+                        <h3 class="card-title">Tuesday</h3>
+                        <p class="card-text">We are getting better, but it is still early in the week.</p>
+                          <button class="btn btn-info">More ...</button>
+                      </div><!-- card-body -->
+                    </div><!-- card -->
+                  </div><!-- col -->
+ 
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card text-center">
+                      <div class="card-body">
+                        <h3 class="card-title">Wednesday</h3>
+                        <p class="card-text">We realize that we still are only at the halfway point to the next weekend.</p>
+                          <button class="btn btn-info">More ...</button>
+                      </div><!-- card-body -->
+                    </div><!-- card -->
+                  </div><!-- col -->
+      
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card text-center">
+                      <div class="card-body">
+                        <h3 class="card-title">Thursday</h3>
+                        <p class="card-text">Oh, it's already Thursday!?! The fine feeling of "YES, I can do it!"</p>
+                          <button class="btn btn-info">More ...</button>
+                      </div><!-- card-body -->
+                    </div><!-- card -->
+                  </div><!-- col -->
+      
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card text-center">
+                      <div class="card-body">
+                        <h3 class="card-title">Friday</h3>
+                        <p class="card-text">Almost over! Only this day is to survive for arriving at the weekend.</p>
+                          <button class="btn btn-info">More ...</button>
+                      </div><!-- card-body -->
+                    </div><!-- card -->
+                  </div><!-- col -->
+      
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card text-center">
+                      <div class="card-body">
+                        <h3 class="card-title">Saturday</h3>
+                        <p class="card-text">Yeah! We are fully recharged for a weekend of fun and amusement.</p>
+                          <button class="btn btn-info">More ...</button>
+                      </div><!-- card-body -->
+                    </div><!-- card -->
+                  </div><!-- col -->
+            </div><!-- row -->
+        
+  </section>
+      </div><!-- container -->
+      
+      <div class="jumbotron">
+          <h2 class="text-center mb-5">Image of the week</h2>
+          <figure class="shrine-img">
+              <img src="../image/carousel-shrine.jpg" class="img-fluid" alt="The scanty chapel on the sea cirque alp with upper tanners in Austria.">
+          </figure>
+      </div>
+      
+      <footer class="footer text-light py-5 bg-dark" id="what">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <p>Call us toll-free at <br class="d-none d-md-block d-lg-none"><a href="tel:8885551212"><span class="phone">888-555-1212</span></a></p>
+            </div> 
+            <div class="col-md-4 text-center">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ourModal">
+                    Terms of Use
+                </button>
+            </div>
+            <div class="col-md-4">
+                <p class="text-right">All contents © 2019 <br class="d-none d-md-block">Me.com. <br class="d-none d-md-block">All rights reserved.</p>
+            </div><!-- col -->
+        </div><!-- row -->
+    </div><!-- container -->
+</footer>
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="../js/jquery-3.3.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="../js/popper.min.js"></script> 
+  <script src="../js/bootstrap-4.2.1.js"></script>
+  </body>
+</html>

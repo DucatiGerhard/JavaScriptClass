@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Render Blocking</title>
+    <style>
+        .container { margin: 0 15px; border: 1px solid black; height: auto; display: inline-block; padding: 10px;}
+        h1 { clear: both; margin-top: 50px; }
+        .col1 { width: 100px; display: inline-block; float: left; clear: left; }
+        .col2 { float: left; width: 600px; }
+        .normal-1   { width: 150px; background-color: green;   display: inline-block; }
+        .normal-2   { width: 150px; background-color: green;   display: inline-block; margin-left:100px; }
+        .normal-3   { width: 70px;   background-color: orange; display: inline-block; margin-left:150px; }
+        .normal-4   { width: 30px;   background-color: red;      display: inline-block; margin-left:220px; }
+        .normal-5   { width: 200px; background-color: green;   display: inline-block; }
+        .normal-6   { width: 200px; background-color: green;   display: inline-block; margin-left:50px; }
+        .normal-7   { width: 50px;   background-color: orange; display: inline-block; margin-left:150px; }
+        .normal-8   { width: 50px;   background-color: red;      display: inline-block; margin-left:200px; }
+        .normal-9   { width: 500px; background-color: green;   display: inline-block; }
+        .normal-10 { width: 100px; background-color: orange;  display: inline-block; margin-left:200px; }
+        .normal-11 { width: 50px;   background-color: red;       display: inline-block; margin-left:500px; }
+        span { color: red; }
+        .last { margin-bottom: 50px; }
+    </style>
+</head>
+
+<body>
+    <h1>Normal Loading:</h1>
+    <h2>&lt;script src="abc.js"&gt;&lt;/script&gt;</h2>
+    <div class="container">
+        <div class="col1">HTTP Parsing</div>
+        <div class="col2"><div class="normal-1">&nbsp;</div><div class="normal-2">&nbsp;</div></div>
+        <div class="col1"> JS Download</div>
+        <div class="col2"><div class="normal-3">&nbsp;</div></div>
+        <div class="col1">JS Execution</div>
+        <div class="col2"><div class="normal-4">&nbsp;</div></div>
+    </div>
+    
+    <h1>Asynchronous Loading:</h1>
+    <h2>&lt;script src="abc.js <span>async</span>"&gt;&lt;/script&gt;</h2>
+    <div class="container">
+        <div class="col1">HTTP Parsing</div>
+        <div class="col2"><div class="normal-5">&nbsp;</div><div class="normal-6">&nbsp;</div></div>
+        <div class="col1"> JS Download</div>
+        <div class="col2"><div class="normal-7">&nbsp;</div></div>
+        <div class="col1">JS Execution</div>
+        <div class="col2"><div class="normal-8">&nbsp;</div></div>
+    </div>
+    
+    <h1>Deferred Loading:</h1>
+    <h2>&lt;script src="abc.js <span>defer</span>"&gt;&lt;/script&gt;</h2>
+    <div class="container last">
+        <div class="col1">HTTP Parsing</div>
+        <div class="col2"><div class="normal-9">&nbsp;</div></div>
+        <div class="col1"> JS Download</div>
+        <div class="col2"><div class="normal-10">&nbsp;</div></div>
+        <div class="col1">JS Execution</div>
+        <div class="col2"><div class="normal-11">&nbsp;</div></div>
+    </div>
+    
+    
+    
+    
+</body>
+</html>
