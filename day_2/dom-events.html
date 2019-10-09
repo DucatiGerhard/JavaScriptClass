@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DOM EVENTS</title>
+    <!-- Bootstrap -->
+	<link href="../css/bootstrap-4.2.1.css" rel="stylesheet">
+	<style>    
+        #book a {
+            border-width: 10px;
+        }
+        .hide { 
+            height: 0; 
+            overflow: hidden; 
+        }     
+    </style>
+      <script src="dom-event.js" defer></script>
+  </head>
+  <body>
+  	<!-- body code goes here -->
+      <nav id="navbar-site" class="navbar navbar-expand-lg navbar-light bg-warning"> 
+        <div class="container">
+          <a class="navbar-brand" href="#">Catholic University <small>of America</small></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"> <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> </li>
+              <li class="nav-item"> <a class="nav-link" href="#mission">Mission</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="#book">Book Class</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="#testimonials">Testimonials</a> </li>
+            </ul>
+          </div>
+       </div>
+    </nav>
+      
+      <!-- Our Mission Section -->    
+      <section id="mission" class="mission-in-style py-5">
+          <div class="container">
+        <h2 class="text-center">Our Mission</h2>
+      <div class="row">
+        <p class="col-lg-5 offset-lg-1">We strive to blend the best in traditional and alternative web design in the layout and user interface of created websites including flat-, responsive-, adaptive- and artistic design. We apply the wisdom garnered in the decades-old tradition of website design, to find the best layouts and looks.</p> 
+        <p class="col-lg-5">We strive to be your website's design experts from youth through the senior years. We build website design plans for each and every one of your, based on requirements, best practice, and themes so that you receive the most appropriate care at crucial milestones. We want to give you a long and healthy website.</p>
+          </div>
+          </div><!-- container -->
+      </section>
+      
+      <!-- Our Book Now Section -->    
+      <section id="book" class="book-in-style py-5 bg-danger">
+        <div class="container text-center">
+        <a class="btn btn-success mb-5"  href="#">Book now</a>
+        <div class="hide" id="booking-alert">
+            <h2 class="text-center text-light mb-4">Sorry about that!</h2>
+            <div class="row text-light" >
+                <p class="col-lg-5 offset-lg-1">By some weird coincidence, all the places for the class are already booked for the time you were planning to take the course. Unfortunately we are unable to provide you with sufficient seating at this time.</p> 
+                <p class="col-lg-5">Our courses are very busy and your satisfaction is our top priority. When you take your first steps in the classroom, your life will change. We are always there to teach you. Your satisfaction matters to us.</p>
+            </div>
+          </div><!-- hide -->
+          </div><!-- container -->
+      </section>
+      
+      
+      <!-- Testimonials Section -->
+<section id="testimonials" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Testimonials</h2>
+      
+<blockquote class="blockquote border-bottom border-primary">During the summer, I began to have thoughts for future generations to also have nice websites and the know how to make their own websites. I started with teaching my son the basics of layout and HTML / CSS.
+    <footer class="blockquote-footer">Jane H.</footer></blockquote>
+      
+<blockquote class="blockquote text-right border-bottom border-danger">When Samantha, our neighbor began to be also interested in HTML, CSS, layout and programming I developed a plan to teach kids the basics. It became a big part of my life showing the next generation where to start.
+    <footer class="blockquote-footer">The McPhersons</footer></blockquote>
+      
+<blockquote class="blockquote text-center border-bottom border-warning">Gerhard worked tirelessly to determine with our ten-year old son to make him understand websites, serverside-, client side programming and best practices. Now he is one of the leading designers at xyz.
+    <footer class="blockquote-footer">John B.</footer></blockquote>
+      
+<blockquote class="blockquote border-bottom border-success">Gerhard is the only designer around that will even designs quick layouts if time is not on your side. He delivered what we needed in time and made us and our customer very happy!
+    <footer class="blockquote-footer">Lorraine S.</footer></blockquote>
+    </div><!-- container -->
+</section>
+      
+<!-- Footer -->
+<footer class="footer text-light py-5 bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <p>Call us toll-free at <a href="tel:8885551212"><span class="phone">888-555-1212</span></a></p>
+            </div> 
+            <div class="col-md-4 text-center">
+                <a href="http://www.famebook.com" class="btn btn-primary btn-block">Famebook</a>
+                <a href="http://www.insterham.com" class="btn btn-success btn-block">Insterham</a>
+                <a href="https://www.hamnasty.com" class="btn btn-info btn-block">Hamnasty International</a>
+                <a href="https://twitcher.com" class="btn btn-warning btn-block">Twitcher</a>
+                <a href="http://www.pigterest.com" class="btn btn-danger btn-block">Pigterest</a>
+                <a href="http://www.hatch.com" class="btn btn-light btn-block">Hatch.com</a>
+            </div><!-- col -->
+            <div class="col-md-4">
+                <p class="text-right">All contents © 2019 Me.com. All rights reserved.</p>
+            </div><!-- col -->
+        </div><!-- row -->
+    </div><!-- container -->
+</footer>
+      
+      
+      
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="../js/jquery-3.3.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="../js/popper.min.js"></script> 
+	<script src="../js/bootstrap-4.2.1.js"></script>
+  </body>
+</html>
