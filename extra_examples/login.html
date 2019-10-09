@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS Login Form Validation</title>
+    <!-- Bootstrap -->
+	<link href="../css/bootstrap-4.2.1.css" rel="stylesheet">
+	<link rel="stylesheet" href="login.css">
+  </head>
+  <body>
+  	<!-- body code goes here -->
+      
+  <div class="container">  
+      <div class="row">
+          <div id="container" class="offset-sm-4 col-sm-4">
+              <div class="main">
+                  <h2 class="mb-3">Javascript Login Form Validation</h2>
+                  <form id="form_id" method="post" name="myform">
+                      <label>User Name :</label>
+                      <input type="text" name="username" id="username"/>
+                      <label>Password :</label>
+                      <input type="password" name="password" id="password"/>
+                      <input type="button" value="Login" id="submit" onclick="validate()"/>
+                  </form>
+                  <span>
+                      <strong class="note">Note : </strong>For this demo use following username and password. <br/>
+                      <strong class="valid">User Name : Formget<br/>Password : formget#123</strong>
+                  </span>
+              </div><!-- main -->
+          </div><!-- col -->
+      </div><!-- row -->
+  </div> <!-- container -->
+      
+      
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="../js/jquery-3.3.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="../js/popper.min.js"></script> 
+	<script src="../js/bootstrap-4.2.1.js"></script>
+    <script src="login.js"></script>
+  </body>
+</html>
