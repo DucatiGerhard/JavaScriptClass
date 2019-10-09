@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Example Page</title>
+    <!-- Bootstrap -->
+	<link href="../css/bootstrap-4.2.1.css" rel="stylesheet">
+	<style>    
+        #book a {
+            border-width: 10px;
+        }
+        .hide { 
+            height: 0; 
+            overflow: hidden; 
+        }     
+    </style>
+   
+  </head>
+  <body>
+  	<!-- body code goes here -->
+      <nav id="navbar-site" class="navbar navbar-expand-lg navbar-light bg-warning border-bottom border-dark shadow"> 
+        <div class="container">
+          <a class="navbar-brand" href="#">Catholic University <small>of America</small></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"> <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> </li>
+              <li class="nav-item"> <a class="nav-link" href="#mission">Mission</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="#testimonials">Testimonials</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="#contact">Contact Us</a> </li>
+            </ul>
+          </div>
+       </div>
+    </nav>
+      
+      <!-- Our Mission Section -->    
+      <section id="mission" class="mission-in-style py-5 bg-danger text-light">
+          <div class="container">
+        <h2 class="text-center mb-4">Our Mission</h2>
+      <div class="row">
+        <p class="col-lg-5 offset-lg-1">We strive to blend the best in traditional and alternative web design in the layout and user interface of created websites including flat-, responsive-, adaptive- and artistic design. We apply the wisdom garnered in the decades-old tradition of website design, to find the best layouts and looks.</p> 
+        <p class="col-lg-5">We strive to be your website's design experts from youth through the senior years. We build website design plans for each and every one of your, based on requirements, best practice, and themes so that you receive the most appropriate care at crucial milestones. We want to give you a long and healthy website.</p>
+          </div>
+          </div><!-- container -->
+      </section>
+      
+      
+      
+      
+      <!-- Testimonials Section -->
+<section id="testimonials" class="py-5 bg-warning">
+    <div class="container">
+        <h2 class="text-center mb-4">Testimonials</h2>
+      
+<blockquote class="blockquote border-bottom border-primary">During the summer, I began to have thoughts for future generations to also have nice websites and the know how to make their own websites. I started with teaching my son the basics of layout and HTML / CSS.
+    <footer class="blockquote-footer">Jane H.</footer></blockquote>
+      
+<blockquote class="blockquote text-right border-bottom border-danger">When Samantha, our neighbor began to be also interested in HTML, CSS, layout and programming I developed a plan to teach kids the basics. It became a big part of my life showing the next generation where to start.
+    <footer class="blockquote-footer">The McPhersons</footer></blockquote>
+      
+<blockquote class="blockquote text-center border-bottom border-warning">Gerhard worked tirelessly to determine with our ten-year old son to make him understand websites, serverside-, client side programming and best practices. Now he is one of the leading designers at xyz.
+    <footer class="blockquote-footer">John B.</footer></blockquote>
+      
+<blockquote class="blockquote border-bottom border-success">Gerhard is the only designer around that will even designs quick layouts if time is not on your side. He delivered what we needed in time and made us and our customer very happy!
+    <footer class="blockquote-footer">Lorraine S.</footer></blockquote>
+    </div><!-- container -->
+</section>
+      
+<section id="contact" class="py-5 bg-light ">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <form id="form-contact" action="index.html" method="post">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputName">Name</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+            </div>
+            <div id="address">
+                <div class="form-group">
+                    <label for="inputAddress">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+            </div><!-- id= address -->
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option value="VA">Virginia</option>
+                        <option value="MD">Maryland</option>
+                        <option value="DC">Washington DC</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">How can we help?</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck" checked>
+                    <label class="form-check-label" for="gridCheck">
+                        Subscribe to our newsletter?
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div><!-- container -->
+</section>
+      
+<!-- Footer -->
+<footer class="footer text-light py-5 bg-dark" id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <p>Call us toll-free at <a href="tel:8885551212"><span class="phone">888-555-1212</span></a></p>
+            </div> 
+            <div class="col-md-4 text-center" role="navigation">
+                <a href="http://www.famebook.com" class="btn btn-primary btn-block">Famebook</a>
+                <a href="http://www.insterham.com" class="btn btn-success btn-block">Insterham</a>
+                <a href="https://www.hamnasty.com" class="btn btn-info btn-block">Hamnasty International</a>
+                <a href="https://twitcher.com" class="btn btn-warning btn-block">Twitcher</a>
+                <a href="http://www.pigterest.com" class="btn btn-danger btn-block">Pigterest</a>
+                <a href="http://www.hatch.com" class="btn btn-light btn-block">Hatch.com</a>
+            </div><!-- col -->
+            <div class="col-md-4">
+                <p class="text-right">All contents © 2019 Me.com. All rights reserved.</p>
+            </div><!-- col -->
+        </div><!-- row -->
+    </div><!-- container -->
+</footer>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="../js/jquery-3.3.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="../js/popper.min.js"></script> 
+	<script src="../js/bootstrap-4.2.1.js"></script>
+       <script src="example.js" defer></script>
+      
+  </body>
+</html>
